@@ -28,7 +28,11 @@ function ReviewForm() {
 
   return (
     <div>
-      <textarea onChange={handleChange} value={review} placeholder="Write your review here..." />
+      <textarea
+        onChange={handleChange}
+        value={review}
+        placeholder="Write your review here..."
+        style={{ width: '300px', height: '100px' }} />
       <br />
       {isClient && (
         <StarRatings
@@ -36,8 +40,8 @@ function ReviewForm() {
           starRatedColor="gold"
           numberOfStars={5}
           name="rating"
-          starDimension="25px"
-          starSpacing="2px"
+          starDimension="50px"
+          starSpacing="5px"
         />
       )}
     </div>

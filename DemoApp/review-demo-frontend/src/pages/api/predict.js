@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
     const { review } = req.body;
-    if (review === undefined) {
+    if (review === undefined || review === null || review === '') {
         res.status(200).json({ rating: 0 });
     }
 
