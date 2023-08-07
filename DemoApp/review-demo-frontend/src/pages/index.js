@@ -8,5 +8,5 @@ export default function Home() {
     router.replace('/review');
   }, [router]);
 
-  return null; // You can also return a loading spinner or some other placeholder content here
+  return null;
 }
